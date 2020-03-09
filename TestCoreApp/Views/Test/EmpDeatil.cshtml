@@ -1,0 +1,35 @@
+﻿@model TestCoreApp.ViewModels.EmpDetailsViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EmpDeatil</title>
+</head>
+<body>
+
+
+<h3>@Model.PageTitle</h3>
+
+    @{
+
+        var employee = ViewBag.Employee;
+    }
+    <div>
+        Name=@Model.Employee.Name;
+    </div>
+    <div>
+        Email=@Model.Employee.Email;
+    </div>
+    <div>
+        Department=@Model.Employee.Department;
+    </div> 
+
+
+
+</body>
+</html>

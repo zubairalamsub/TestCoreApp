@@ -1,0 +1,48 @@
+﻿@model IEnumerable<TestCoreApp.Models.Employee>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <table class="table-bordered table-hover table-dark ">
+      <thead>
+          <tr>
+              <th>
+                  Name
+              </th>
+              <th>
+                  Email
+              </th>
+
+              <th>
+                  Department
+              </th>
+          </tr>
+      </thead>
+
+        <tbody>
+            @foreach (var emp in Model)
+            {
+                 
+            <tr>
+                <td>@emp.Name</td>
+                <td>@emp.Email</td>
+                <td>@emp.Department</td>
+            </tr>
+
+            }
+            
+        </tbody>
+    </table>
+
+
+</body>
+</html>
