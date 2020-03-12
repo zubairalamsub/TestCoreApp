@@ -5,6 +5,10 @@
     <UserSecretsId>aspnet-TestCoreApp-8929ED7F-488E-49E6-B836-35B133E86649</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\images\img.png" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="bootstrap" Version="4.4.1" />
@@ -14,6 +18,11 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="wwwroot\images\img.png" />
   </ItemGroup>
 
 </Project>

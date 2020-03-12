@@ -24,12 +24,12 @@ namespace TestCoreApp.Controllers
 
         }
 
-        public ViewResult EmpDeatil()
+        public ViewResult EmpDeatil(int id)
         {
             EmpDetailsViewModel empDetailsViewModel = new EmpDetailsViewModel()
 
             {
-                Employee=_employeeRepository.GetEmployee(1),
+                Employee=_employeeRepository.GetEmployee(id),
                 PageTitle= "Employee Page"
             };
 
