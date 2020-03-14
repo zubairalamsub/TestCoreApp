@@ -9,6 +9,7 @@ namespace TestCoreApp.Models
     {
         Employee GetEmployee(int id);
         IEnumerable<Employee> GetEmployee();
+        Employee Add(Employee employee);
         //void Save(Employee employee);
     }
 }

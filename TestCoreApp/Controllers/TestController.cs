@@ -38,5 +38,24 @@ namespace TestCoreApp.Controllers
 
         }
 
+        public ViewResult Create()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public IActionResult Create(Employee employee)
+        {
+
+            if (ModelState.IsValid)
+            {
+                Employee newEmployee = _employeeRepository.Add(employee);
+                return RedirectToAction("EmpDeatil", new { id = newEmployee.Id });
+            }
+            return View();
+          
+        }
+
     }
 }
